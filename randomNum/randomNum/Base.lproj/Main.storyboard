@@ -17,28 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="TJF-Pd-dWE">
-                                <rect key="frame" x="32" y="59" width="311" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="TJF-Pd-dWE">
+                                <rect key="frame" x="32" y="59" width="311" height="130"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDJ-q0-wqu">
-                                <rect key="frame" x="75" y="224" width="225" height="219"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDJ-q0-wqu">
+                                <rect key="frame" x="75" y="214" width="225" height="261"/>
                                 <state key="normal" image="botaogerar"/>
                                 <state key="highlighted" image="botaogerar-pressionado"/>
                                 <connections>
                                     <action selector="randomBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvt-bn-kEZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-eX-rVb">
-                                <rect key="frame" x="153" y="485" width="68" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-eX-rVb">
+                                <rect key="frame" x="153" y="485" width="69" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="hnu-3x-ThY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.481689453125" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJF-Pd-dWE" secondAttribute="trailing" constant="32" id="0PJ-Sw-iGF"/>
+                            <constraint firstItem="NwZ-eX-rVb" firstAttribute="top" secondItem="QDJ-q0-wqu" secondAttribute="bottom" constant="10" id="6S9-dV-XPy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QDJ-q0-wqu" secondAttribute="trailing" constant="75" id="7Un-vK-0dT"/>
+                            <constraint firstItem="TJF-Pd-dWE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="8ve-dA-3z9"/>
+                            <constraint firstItem="TJF-Pd-dWE" firstAttribute="centerX" secondItem="NwZ-eX-rVb" secondAttribute="centerX" id="A11-Do-0Nf"/>
+                            <constraint firstItem="TJF-Pd-dWE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="B99-4q-4sf"/>
+                            <constraint firstItem="QDJ-q0-wqu" firstAttribute="top" secondItem="TJF-Pd-dWE" secondAttribute="bottom" constant="25" id="KRY-YK-HfS"/>
+                            <constraint firstItem="QDJ-q0-wqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="WUc-tx-bno"/>
+                            <constraint firstItem="NwZ-eX-rVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="YJY-tB-hNS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
